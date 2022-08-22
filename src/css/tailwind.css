@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {}
+@layer components {
+    body {}
+    .container {
+        @apply mx-auto xl:max-w-[1100px] 2xl:max-w-[1100px] px-4;
+    }
+
+    /* .player-wrapper {
+        position: relative;
+        padding-top: 56.25%;
+    }
+    
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+
+    .video-player {
+        @apply relative;
+    }
+    .controls {
+        /* @apply text-xl p-4 absolute top-0 left-0 right-0 bottom-0 opacity-0 bg-neutral-900/80 text-gray-100 transition-all delay-150; */
+    }
+    /* .video-player:hover .controls {
+        @apply opacity-100;
+    } */
+}
+@layer utilities {}
